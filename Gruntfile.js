@@ -9,6 +9,8 @@
 
 module.exports = function (grunt) {
 
+  var pkg = require('./package.json');
+  
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -509,7 +511,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'buildcontrol'
   ]);
 
   grunt.registerTask('default', [
