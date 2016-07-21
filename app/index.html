@@ -1,0 +1,436 @@
+<!doctype html>
+<html class="full">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="telligenTechApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed" my-navscroll  ng-class="{min:boolChangeClass}">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" ui-sref="home">Telligen Tech
+            <!--<img src="images/telligen-logo.png" alt="">-->
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="" scroll-to="home">Home</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="" scroll-to="about-us">About Us</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="" scroll-to="portfolio-2">Careers</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="" scroll-to="portfolio-1">Job Openings</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="" scroll-to="contact-us">Contact Us</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="" scroll-to="about-us-new">Sign Up/Login</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div ui-view>
+    </div>
+    <div>
+      <header id="home">
+        <div class="header-background">
+          <div class="header-content animated fadeInDown">
+            <div class="header-content-inner">
+              <h1>Vision, Passion and Commitment</h1>
+              <hr>
+              <!--<p>An app for parents to communicate with kids at the daycare or a playschool.</p>-->
+              <p>Our overall purpose is to identify top talent to meet the specialized needs of our clients and to offer challenge, growth and opportunity to our candidates. We are built on integrity, professionalism and reliability.</p>
+              <!--<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>-->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--<section class="no-padding" id="portfolio">
+        <div class="container training-section-background"  when-visible="animateElementIn"
+             when-not-visible="animateElementOut">
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in trainingServices" active="slide.active">
+              <div class="row animated">
+                <div class="col-lg-6 col-md-6 text-center">
+                  <div class="training-box">
+                    <h1>{{slide.title}}</h1>
+                    <h4>{{slide.subtext}}</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                  <div class="training-box">
+                    <img src="{{slide.image}}" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </slide>
+          </carousel>
+        </div>
+      </section>-->
+      <section class="bg-primary" id="about">
+        <div class="bg-primary-container">
+          <div class="row">
+            <div class="row animated fadeInDown">
+              <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                  <i class="fa fa-4x fa-laptop wow bounceIn text-primary"></i>
+                  <h3>Application development</h3>
+                  <p>Application Development Services offered by TelligenTech help streamline business processes, systems and information.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                  <i class="fa fa-4x fa-users wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                  <h3>Project Management</h3>
+                  <p>We are a business-to-business provider of project management services. Our largest practice area is software development project management.
+                  </p>
+                </div>
+              </div>
+              <div class="row animated fadeInDown">
+                <div class="col-lg-3 col-md-6 text-center">
+                  <div class="service-box">
+                    <i class="fa fa-4x fa-bar-chart wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Business Intelligence</h3>
+                    <p>Business Intelligence (BI) facilitates businesses to perform management by “facts”.Telligen Tech helps you in your quest for business excellence with a BI-guided roadmap.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                  <div class="service-box">
+                    <i class="fa fa-4x fa-list-ol wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Identity and Access Management</h3>
+                    <p>Access management is about managing consistent sets of access control policies across enterprise systems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary" id="about-us">
+        <div class="bg-primary-container">
+          <div class="bg-primary-container-about-us">
+            <h1>About Us</h1>
+            <hr>
+            <p>Founded in 2012, TelligenTech is a Technology powerhouse with a vision of bringing actionable accomplishments to masses.</p>
+            <div class="row animated fadeInDown">
+              <div class="col-lg-3 col-md-6 text-center">
+                <img src="images/feature-img-1.png" alt="">
+              </div>
+              <div class="col-lg-9 col-md-9 text-center">
+                <div class="service-box">
+                  <h3>Who we are?</h3>
+                  <hr>
+                  <p>Founded in 2012, TelligenTech is a Technology powerhouse with a vision of bringing actionable accomplishments to masses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-container-about-us-2">
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="service-box">
+                <h3>Application development</h3>
+                <p>Application Development Services offered by TelligenTech help streamline business processes, systems and information.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="service-box">
+                <h3>Project Management</h3>
+                <p>We are a business-to-business provider of project management services. Our largest practice area is software development project management.
+                </p>
+              </div>
+            </div>
+            <div class="row animated fadeInDown">
+              <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box">
+                  <h3>Business Intelligence</h3>
+                  <p>Business Intelligence (BI) facilitates businesses to perform management by “facts”.Telligen Tech helps you in your quest for business excellence with a BI-guided roadmap.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients-section-background" id="portfolio-2">
+        <div class="bg-primary-container-clients">
+          <h1 class="text-center">READY FOR YOUR INDUSTRY</h1>
+          <div class="row animated wow slideInLeft">
+            <div class="col-lg-3 col-md-3 text-center client-tiles">
+              <div class="domains-box">
+                <i class="fa fa-4x fa-shield wow bounceIn text-primary-application"></i>
+                <h3>INSURANCE</h3>
+                <hr>
+                <h3>Deliver the best patient experience you can.</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center client-tiles">
+              <div class="domains-box">
+                <i class="fa fa-4x fa-usd wow bounceIn text-primary-application" data-wow-delay=".1s"></i>
+                <h3>FINANCE</h3>
+                <hr>
+                <h3>Make better clinical decisions.</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row animated wow slideInLeft">
+            <div class="col-lg-3 col-md-3 text-center client-tiles">
+              <div class="domains-box">
+                <i class="fa fa-4x fa-heartbeat wow bounceIn text-primary-application"></i>
+                <h3>HEALTHCARE</h3>
+                <hr>
+                <h3>Deliver the best patient experience you can.</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center client-tiles">
+              <div class="domains-box">
+                <i class="fa fa-4x fa-shopping-cart wow bounceIn text-primary-application" data-wow-delay=".1s"></i>
+                <h3>E-COMMERCE</h3>
+                <hr>
+                <h3>Understand trade promotions in-depth.</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="no-padding main-techology-background" id="portfolio-1">
+        <div class="container client-data-section-background">
+          <div class="container client-data-section-container">
+            <div class="row animated">
+              <div class="col-lg-12 col-md-12 text-center">
+                <h1>Get the data on Telligen Tech</h1>
+                <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                  <div class="service-box">
+                    <h1>4</h1>
+                    <h4>years in business</h4>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                  <div class="service-box">
+                    <h1>5000+</h1>
+                    <h4>engagements</h4>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                  <div class="service-box">
+                    <h1>8 years</h1>
+                    <h4>average customer tenure</h4>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                  <div class="service-box">
+                    <h1>50+</h1>
+                    <h4>of The Global 250</h4>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row animated fadeInDown">
+                <div class="col-lg-12 col-md-12 text-center">
+                  <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                    <div class="service-box">
+                      <h1>5x</h1>
+                      <h4>faster time to value than other offerings</h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                    <div class="service-box">
+                      <h1>2 of 3</h1>
+                      <h4>top pharma companies as customers</h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                    <div class="service-box">
+                      <h1>$30 million</h1>
+                      <h4>yearly fraud avoided for insurance customers</h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center wow bounceIn">
+                    <div class="service-box">
+                      <h1>418%</h1>
+                      <h4>ROI, payback less than 6 months</h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary-container-contact-us" id="contact-us">
+        <div class="bg-primary-container">
+          <div class="bg-primary-container-about-us">
+            <h1>Contact Us</h1>
+            <hr>
+            <p>Founded in 2012, TelligenTech is a Technology powerhouse with a vision of bringing actionable accomplishments to masses.</p>
+            <div class="col-lg-6 col-md-6 text-center">
+              <form class="form-horizontal" role="form" ng-submit="contactUsController.saveContact()">
+                <div class="form-group">
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="text" placeholder="Name" ng-model="name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" ng-model="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" ng-model="subject">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <p>2740 Airport Drive, Suite 190, Columbus, OH 43219 4449</p>
+              <p>(614) 934-1554</p>
+              <p>+0987654321 (+012345678)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <footer id="footer" class="midnight-blue">
+      <div class="row animated fadeInDown">
+          <div class="container text-center">
+            <div class="call-to-action">
+              <div class="container">
+                <div class="row animated fadeInDown">
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                      <h3>Location</h3>
+                      <p>OHIO :</p>
+                      <p>2740 Airport Drive, Suite 190, Columbus, OH 43219
+                        4449 Easton Way, Flr #2, Columbus, Ohio 43219</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                      <h3>Reach Us</h3>
+                      <p>You can reach us at</p>
+                      <p>USA</p>
+                      <p>Columbus</p>
+                      <p>Phone : (614) 934-1554</p>
+                      <p>Fax : (614) 934-1001</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                      <h3>Useful Links</h3>
+                      <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Job Postings</a></li>
+                        <li><a href="#">Employee Portal</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                      <h3>Copyright</h3>
+                      <p>@copy 2013 Telligent Tech</p>
+                      <p>All rights reserved</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer><!--/#footer-->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/wow/dist/wow.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contactUs.js"></script>
+    <script src="scripts/controllers/loginController.js"></script>
+    <script src="scripts/services/authFactory.js"></script>
+    <script src="scripts/controllers/angular-smooth-scroll.js"></script>
+    <script src="scripts/controllers/navScroll.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- endbuild -->
+</body>
+</html>

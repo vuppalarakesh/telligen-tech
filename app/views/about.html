@@ -1,0 +1,53 @@
+<section id="feature" class="aboutus-cover">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h1 class="pages-heading" ng-if="aboutCtrl.showAboutUsContent">{{aboutCtrl.aboutUsData.heading}}</h1>
+      <h1 class="pages-heading" ng-if="aboutCtrl.showOurValuesContent">{{aboutCtrl.ourValuesData.heading}}</h1>
+      <hr>
+
+    </div>
+  </div>
+</section>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav navbar-left">
+    <li>
+      <a class="page-scroll" ng-click="aboutCtrl.showAboutUs()">About Us</a>
+    </li>
+    <li>
+      <a class="page-scroll"  ng-click="aboutCtrl.showOurValues()">Our values</a>
+    </li>
+  </ul>
+</div>
+<section id="feature" class="about-bg-2" ng-show="aboutCtrl.showAboutUsContent">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h3>Who we are?</h3>
+      <hr>
+      <div class="row animated fadeInDown">
+        <div class="col-lg-12 col-md-12 text-center" >
+          <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".2s"></i>
+          <div ng-bind-html="aboutCtrl.aboutUsData.content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="feature2" class="about-bg-2" ng-show="aboutCtrl.showOurValuesContent">
+  <div class="container">
+
+    <div class="center wow fadeInDown">
+      <h3>Pride in work</h3>
+      <hr>
+      <div class="row animated fadeInDown">
+        <div class="col-lg-12 col-md-12 text-center">
+          <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".2s"></i>
+          <div ng-bind-html="aboutCtrl.ourValuesData.content"></div>
+        </div>
+      </div>
+
+
+        </div>
+    </div>
+
+    </div><!--/.container-->
+</section><!--/#feature-->
