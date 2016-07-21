@@ -449,12 +449,12 @@ module.exports = function (grunt) {
       pages: {
         options: {
           remote: 'git@github.com:vuppalarakesh/telligen-tech.git',
-          branch: 'gh-pages'
+          branch: 'heroku-deploy'
         }
       },
       heroku: {
         options: {
-          remote: 'git@heroku.com:example-heroku-webapp-1988.git',
+          remote: 'git@heroku.com:vuppalarakesh/telligen-tech.git',
           branch: 'master',
           tag: pkg.version
         }
