@@ -10,7 +10,7 @@
 module.exports = function (grunt) {
 
   var pkg = require('./package.json');
-  
+
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -26,6 +26,8 @@ module.exports = function (grunt) {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
+
+  grunt.loadNpmTasks('grunt-build-control');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
